@@ -3,7 +3,7 @@ using ChatBotResumeBE.Services.Interface;
 
 namespace ChatBotResumeBE.Services
 {
-    public class OpenAiProvider : IAiProvider
+    public class SarvamAiProvider : IAiProvider
     {
         public Task<string> GeneratApiLey()
         {
