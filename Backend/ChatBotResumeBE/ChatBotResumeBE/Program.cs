@@ -1,3 +1,6 @@
+using ChatBotResumeBE.Orchestrator;
+using ChatBotResumeBE.Services.AiProvider;
+using ChatBotResumeBE.Services.AiProvider.Interface;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);

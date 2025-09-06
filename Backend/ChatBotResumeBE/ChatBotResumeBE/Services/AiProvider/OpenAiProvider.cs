@@ -40,8 +40,8 @@ namespace ChatBotResumeBE.Services.AiProvider
 
         public async Task<string> GetChatCompletionAsync(string prompt, string systemMessage = "")
         {
-            var response = await _client.CompleteChatAsync("You are a helpful AI assistant.");
-            return response.FirstChoice?.Message?.Content ?? "";
+            var response = await _client.CompleteChatAsync(prompt);
+            return response.GetRawResponse().Content.ToString();
         }
 
         public Task<string> GetEmbeddingAsync(string input)
