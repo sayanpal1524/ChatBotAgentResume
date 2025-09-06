@@ -1,7 +1,6 @@
-﻿
-using ChatBotResumeBE.Services.Interface;
+﻿using ChatBotResumeBE.Services.AiProvider.Interface;
 
-namespace ChatBotResumeBE.Services
+namespace ChatBotResumeBE.Services.AiProvider
 {
     public class SarvamAiProvider : IAiProvider
     {

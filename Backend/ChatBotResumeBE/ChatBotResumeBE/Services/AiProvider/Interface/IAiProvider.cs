@@ -1,4 +1,4 @@
-﻿namespace ChatBotResumeBE.Services.Interface
+﻿namespace ChatBotResumeBE.Services.AiProvider.Interface
 {
     public interface IAiProvider
     {

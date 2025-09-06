@@ -1,4 +1,4 @@
-﻿using ChatBotResumeBE.Services.Interface;
+﻿using ChatBotResumeBE.Services.AiProvider.Interface;
 
 namespace ChatBotResumeBE.Orchestrator
 {
