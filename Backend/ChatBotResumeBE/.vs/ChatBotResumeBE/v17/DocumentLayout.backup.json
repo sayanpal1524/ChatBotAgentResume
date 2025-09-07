@@ -3,48 +3,24 @@
   "WorkspaceRootPath": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\services\\aiprovider\\openaiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\services\\aiprovider\\openaiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\util\\entity\\resumecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\util\\entity\\resumecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\util\\model\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\util\\model\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\services\\authentication\\openaiauthprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\services\\authentication\\openaiauthprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\controllers\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\controllers\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\services\\profileservice\\interface\\iprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\services\\profileservice\\interface\\iprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\orchestrator\\chatorchestrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\orchestrator\\chatorchestrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\services\\authentication\\interface\\iaiauthprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\services\\authentication\\interface\\iaiauthprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\services\\aiprovider\\sarvamaiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\services\\aiprovider\\sarvamaiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\services\\aiprovider\\interface\\iaiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\services\\aiprovider\\interface\\iaiprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\orchestrator\\ichatorchestrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\orchestrator\\ichatorchestrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|d:\\projects\\chatbotagentresume\\backend\\chatbotresumebe\\chatbotresumebe\\util\\dto\\requestdto\\applyjobrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782407FF-D18F-4A82-BB02-3B3DE3A53B5D}|ChatBotResumeBE\\ChatBotResumeBE.csproj|solutionrelative:chatbotresumebe\\util\\dto\\requestdto\\applyjobrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,147 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\appsettings.json",
-              "RelativeDocumentMoniker": "ChatBotResumeBE\\appsettings.json",
-              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\appsettings.json",
-              "RelativeToolTip": "ChatBotResumeBE\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-06T01:47:26.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OpenAiAuthProvider.cs",
-              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Services\\Authentication\\OpenAiAuthProvider.cs",
-              "RelativeDocumentMoniker": "ChatBotResumeBE\\Services\\Authentication\\OpenAiAuthProvider.cs",
-              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Services\\Authentication\\OpenAiAuthProvider.cs",
-              "RelativeToolTip": "ChatBotResumeBE\\Services\\Authentication\\OpenAiAuthProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T01:58:08.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IAiAuthProvider.cs",
-              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Services\\Authentication\\Interface\\IAiAuthProvider.cs",
-              "RelativeDocumentMoniker": "ChatBotResumeBE\\Services\\Authentication\\Interface\\IAiAuthProvider.cs",
-              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Services\\Authentication\\Interface\\IAiAuthProvider.cs",
-              "RelativeToolTip": "ChatBotResumeBE\\Services\\Authentication\\Interface\\IAiAuthProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T03:12:18.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ChatOrchestrator.cs",
-              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Orchestrator\\ChatOrchestrator.cs",
-              "RelativeDocumentMoniker": "ChatBotResumeBE\\Orchestrator\\ChatOrchestrator.cs",
-              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Orchestrator\\ChatOrchestrator.cs",
-              "RelativeToolTip": "ChatBotResumeBE\\Orchestrator\\ChatOrchestrator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T02:45:45.949Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IChatOrchestrator.cs",
-              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Orchestrator\\IChatOrchestrator.cs",
-              "RelativeDocumentMoniker": "ChatBotResumeBE\\Orchestrator\\IChatOrchestrator.cs",
-              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Orchestrator\\IChatOrchestrator.cs",
-              "RelativeToolTip": "ChatBotResumeBE\\Orchestrator\\IChatOrchestrator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T02:41:22.383Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SarvamAiProvider.cs",
-              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Services\\AiProvider\\SarvamAiProvider.cs",
-              "RelativeDocumentMoniker": "ChatBotResumeBE\\Services\\AiProvider\\SarvamAiProvider.cs",
-              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Services\\AiProvider\\SarvamAiProvider.cs",
-              "RelativeToolTip": "ChatBotResumeBE\\Services\\AiProvider\\SarvamAiProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T02:32:33.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IAiProvider.cs",
-              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Services\\AiProvider\\Interface\\IAiProvider.cs",
-              "RelativeDocumentMoniker": "ChatBotResumeBE\\Services\\AiProvider\\Interface\\IAiProvider.cs",
-              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Services\\AiProvider\\Interface\\IAiProvider.cs",
-              "RelativeToolTip": "ChatBotResumeBE\\Services\\AiProvider\\Interface\\IAiProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T03:25:24.663Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OpenAiProvider.cs",
-              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Services\\AiProvider\\OpenAiProvider.cs",
-              "RelativeDocumentMoniker": "ChatBotResumeBE\\Services\\AiProvider\\OpenAiProvider.cs",
-              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Services\\AiProvider\\OpenAiProvider.cs",
-              "RelativeToolTip": "ChatBotResumeBE\\Services\\AiProvider\\OpenAiProvider.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACoAAABDAAAAAAAAAA==",
+              "Title": "ResumeContext.cs",
+              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Util\\Entity\\ResumeContext.cs",
+              "RelativeDocumentMoniker": "ChatBotResumeBE\\Util\\Entity\\ResumeContext.cs",
+              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Util\\Entity\\ResumeContext.cs",
+              "RelativeToolTip": "ChatBotResumeBE\\Util\\Entity\\ResumeContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T03:24:36.845Z",
+              "WhenOpened": "2025-09-07T12:44:24.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Program.cs",
-              "RelativeDocumentMoniker": "ChatBotResumeBE\\Program.cs",
-              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Program.cs",
-              "RelativeToolTip": "ChatBotResumeBE\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA6AAAAAAAAAA==",
+              "Title": "Profile.cs",
+              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Util\\Model\\Profile.cs",
+              "RelativeDocumentMoniker": "ChatBotResumeBE\\Util\\Model\\Profile.cs",
+              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Util\\Model\\Profile.cs",
+              "RelativeToolTip": "ChatBotResumeBE\\Util\\Model\\Profile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T03:16:11.68Z",
+              "WhenOpened": "2025-09-07T12:26:16.748Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProfileService.cs",
+              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Services\\ProfileService\\Interface\\IProfileService.cs",
+              "RelativeDocumentMoniker": "ChatBotResumeBE\\Services\\ProfileService\\Interface\\IProfileService.cs",
+              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Services\\ProfileService\\Interface\\IProfileService.cs",
+              "RelativeToolTip": "ChatBotResumeBE\\Services\\ProfileService\\Interface\\IProfileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T12:21:19.845Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ChatController.cs",
-              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Controllers\\ChatController.cs",
-              "RelativeDocumentMoniker": "ChatBotResumeBE\\Controllers\\ChatController.cs",
-              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Controllers\\ChatController.cs",
-              "RelativeToolTip": "ChatBotResumeBE\\Controllers\\ChatController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "JobsController.cs",
+              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Controllers\\JobsController.cs",
+              "RelativeDocumentMoniker": "ChatBotResumeBE\\Controllers\\JobsController.cs",
+              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Controllers\\JobsController.cs",
+              "RelativeToolTip": "ChatBotResumeBE\\Controllers\\JobsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T03:15:21.612Z"
+              "WhenOpened": "2025-09-07T12:13:07.382Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "ChatBotResumeBE\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "ChatBotResumeBE\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ApplyJobRequest.cs",
+              "DocumentMoniker": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Util\\DTO\\RequestDTO\\ApplyJobRequest.cs",
+              "RelativeDocumentMoniker": "ChatBotResumeBE\\Util\\DTO\\RequestDTO\\ApplyJobRequest.cs",
+              "ToolTip": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\Util\\DTO\\RequestDTO\\ApplyJobRequest.cs",
+              "RelativeToolTip": "ChatBotResumeBE\\Util\\DTO\\RequestDTO\\ApplyJobRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T03:03:51.501Z"
+              "WhenOpened": "2025-09-07T12:10:50.302Z",
+              "EditorCaption": ""
             }
           ]
         }

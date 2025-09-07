@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChatBotResumeBE.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class ChatController : Controller
     {
         // GET: ChatController
