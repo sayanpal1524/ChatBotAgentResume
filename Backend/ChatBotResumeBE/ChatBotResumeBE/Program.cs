@@ -1,6 +1,8 @@
 using ChatBotResumeBE.Orchestrator;
 using ChatBotResumeBE.Services.AiProvider;
 using ChatBotResumeBE.Services.AiProvider.Interface;
+using ChatBotResumeBE.Util.Entity;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,8 @@ builder.Host.UseSerilog((ctx, lc) =>
 builder.Services.AddControllers();
 builder.Services.AddScoped<IChatOrchestrator, ChatOrchestrator>();
 builder.Services.AddScoped<IAiProvider, OpenAiProvider>();
+builder.Services.AddDbContext<ResumeContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultDBConnection")));
 
 // CORS
 builder.Services.AddCors(options =>

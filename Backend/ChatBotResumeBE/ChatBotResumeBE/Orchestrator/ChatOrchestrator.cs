@@ -16,9 +16,9 @@ namespace ChatBotResumeBE.Orchestrator
             return await _aiProvider.GetChatCompletionAsync(userMessage);
         }
 
-        public async IAsyncEnumerable<string> HandleMessageStreamAsync(string sessionId, string userMessage)
-        {
-            throw new NotImplementedException();
-        }
+        //public async IAsyncEnumerable<string> HandleMessageStreamAsync(string sessionId, string userMessage)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

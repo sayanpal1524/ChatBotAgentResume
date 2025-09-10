@@ -1,4 +1,6 @@
-﻿namespace ChatBotResumeBE.Services.ProfileService.Interface
+﻿using ChatBotResumeBE.Util.Model;
+
+namespace ChatBotResumeBE.Services.ProfileService.Interface
 {
     public interface IProfileService
     {

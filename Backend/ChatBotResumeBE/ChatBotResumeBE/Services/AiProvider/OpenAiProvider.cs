@@ -2,12 +2,13 @@
 using OpenAI;
 using OpenAI.Chat;
 using StackExchange.Redis;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ChatBotResumeBE.Services.AiProvider
 {
     public class OpenAiProvider : IAiProvider
     {
-        private readonly ChatClient _client;
+        private readonly OpenAIClient _client;
         private readonly string _model;
 
         public OpenAiProvider(IConfiguration config)
@@ -18,14 +19,8 @@ namespace ChatBotResumeBE.Services.AiProvider
             if (string.IsNullOrEmpty(apiKey))
                 throw new InvalidOperationException("OpenAI API key is missing.");
 
-            _client = new(
-                model: "gpt-4o-mini",
-                credential: new System.ClientModel.ApiKeyCredential(apiKey),
-                options: new OpenAIClientOptions()
-                {
-                    Endpoint = new Uri("BASE_URL")
-                }
-            );
+            _client = new OpenAIClient(apiKey);
+            _model = config["OpenAI:Model"] ?? "gpt-4o-mini";
         }
         public Task<string> GeneratApiLey()
         {
@@ -40,7 +35,25 @@ namespace ChatBotResumeBE.Services.AiProvider
 
         public async Task<string> GetChatCompletionAsync(string prompt, string systemMessage = "")
         {
-            var response = await _client.CompleteChatAsync(prompt);
+            if (string.IsNullOrEmpty(prompt))
+            {
+                // 2. Prompt OpenAI for structured extraction
+                var chatRequest = new ChatRequest(
+                    messages: new List<Message>
+                    {
+                    new Message(Role.System, "You are a resume parsing assistant. Extract structured data from resumes."),
+                    new Message(Role.User, $@"
+Parse this resume into JSON with keys: FullName, Email, Phone, Summary, Skills, Experience, Education, Certifications.
+
+Resume Text:
+{prompt}
+")
+                    },
+                    model: _model,
+                    temperature: 0
+                );
+            }
+            var response = await _client.GetChatClient(_model).CompleteChatAsync(prompt);
             return response.GetRawResponse().Content.ToString();
         }
 
