@@ -60,6 +60,69 @@
           }
         }
       },
+      "IKVM/8.1.5717": {
+        "type": "package",
+        "compile": {
+          "lib/IKVM.AWT.WinForms.dll": {},
+          "lib/IKVM.OpenJDK.Beans.dll": {},
+          "lib/IKVM.OpenJDK.Charsets.dll": {},
+          "lib/IKVM.OpenJDK.Cldrdata.dll": {},
+          "lib/IKVM.OpenJDK.Corba.dll": {},
+          "lib/IKVM.OpenJDK.Core.dll": {},
+          "lib/IKVM.OpenJDK.Jdbc.dll": {},
+          "lib/IKVM.OpenJDK.Localedata.dll": {},
+          "lib/IKVM.OpenJDK.Management.dll": {},
+          "lib/IKVM.OpenJDK.Media.dll": {},
+          "lib/IKVM.OpenJDK.Misc.dll": {},
+          "lib/IKVM.OpenJDK.Naming.dll": {},
+          "lib/IKVM.OpenJDK.Nashorn.dll": {},
+          "lib/IKVM.OpenJDK.Remoting.dll": {},
+          "lib/IKVM.OpenJDK.Security.dll": {},
+          "lib/IKVM.OpenJDK.SwingAWT.dll": {},
+          "lib/IKVM.OpenJDK.Text.dll": {},
+          "lib/IKVM.OpenJDK.Tools.dll": {},
+          "lib/IKVM.OpenJDK.Util.dll": {},
+          "lib/IKVM.OpenJDK.XML.API.dll": {},
+          "lib/IKVM.OpenJDK.XML.Bind.dll": {},
+          "lib/IKVM.OpenJDK.XML.Crypto.dll": {},
+          "lib/IKVM.OpenJDK.XML.Parse.dll": {},
+          "lib/IKVM.OpenJDK.XML.Transform.dll": {},
+          "lib/IKVM.OpenJDK.XML.WebServices.dll": {},
+          "lib/IKVM.OpenJDK.XML.XPath.dll": {},
+          "lib/IKVM.Runtime.JNI.dll": {},
+          "lib/IKVM.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/IKVM.AWT.WinForms.dll": {},
+          "lib/IKVM.OpenJDK.Beans.dll": {},
+          "lib/IKVM.OpenJDK.Charsets.dll": {},
+          "lib/IKVM.OpenJDK.Cldrdata.dll": {},
+          "lib/IKVM.OpenJDK.Corba.dll": {},
+          "lib/IKVM.OpenJDK.Core.dll": {},
+          "lib/IKVM.OpenJDK.Jdbc.dll": {},
+          "lib/IKVM.OpenJDK.Localedata.dll": {},
+          "lib/IKVM.OpenJDK.Management.dll": {},
+          "lib/IKVM.OpenJDK.Media.dll": {},
+          "lib/IKVM.OpenJDK.Misc.dll": {},
+          "lib/IKVM.OpenJDK.Naming.dll": {},
+          "lib/IKVM.OpenJDK.Nashorn.dll": {},
+          "lib/IKVM.OpenJDK.Remoting.dll": {},
+          "lib/IKVM.OpenJDK.Security.dll": {},
+          "lib/IKVM.OpenJDK.SwingAWT.dll": {},
+          "lib/IKVM.OpenJDK.Text.dll": {},
+          "lib/IKVM.OpenJDK.Tools.dll": {},
+          "lib/IKVM.OpenJDK.Util.dll": {},
+          "lib/IKVM.OpenJDK.XML.API.dll": {},
+          "lib/IKVM.OpenJDK.XML.Bind.dll": {},
+          "lib/IKVM.OpenJDK.XML.Crypto.dll": {},
+          "lib/IKVM.OpenJDK.XML.Parse.dll": {},
+          "lib/IKVM.OpenJDK.XML.Transform.dll": {},
+          "lib/IKVM.OpenJDK.XML.WebServices.dll": {},
+          "lib/IKVM.OpenJDK.XML.XPath.dll": {},
+          "lib/IKVM.Runtime.JNI.dll": {},
+          "lib/IKVM.Runtime.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
@@ -2063,6 +2126,32 @@
             "rid": "win"
           }
         }
+      },
+      "TikaOnDotnet/1.17.1": {
+        "type": "package",
+        "dependencies": {
+          "IKVM": "8.1.5717"
+        },
+        "compile": {
+          "lib/TikaOnDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/TikaOnDotNet.dll": {}
+        }
+      },
+      "TikaOnDotnet.TextExtractor/1.17.1": {
+        "type": "package",
+        "dependencies": {
+          "TikaOnDotnet": "[1.17.1]"
+        },
+        "compile": {
+          "lib/TikaOnDotNet.TextExtraction.dll": {},
+          "lib/TikaOnDotNet.dll": {}
+        },
+        "runtime": {
+          "lib/TikaOnDotNet.TextExtraction.dll": {},
+          "lib/TikaOnDotNet.dll": {}
+        }
       }
     }
   },
@@ -2121,6 +2210,52 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "IKVM/8.1.5717": {
+      "sha512": "5olx8s2XYTfu6xu59ozQi9Jz5s6IHdJTK+XEFKpPxxVHoQWphb2G78btQTu1Z69I18n0tpcJ/EK5Dg2wmHJQIA==",
+      "type": "package",
+      "path": "ikvm/8.1.5717",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "THIRD_PARTY_README",
+        "TRADEMARK",
+        "ikvm.8.1.5717.nupkg.sha512",
+        "ikvm.nuspec",
+        "lib/IKVM.AWT.WinForms.dll",
+        "lib/IKVM.OpenJDK.Beans.dll",
+        "lib/IKVM.OpenJDK.Charsets.dll",
+        "lib/IKVM.OpenJDK.Cldrdata.dll",
+        "lib/IKVM.OpenJDK.Corba.dll",
+        "lib/IKVM.OpenJDK.Core.dll",
+        "lib/IKVM.OpenJDK.Jdbc.dll",
+        "lib/IKVM.OpenJDK.Localedata.dll",
+        "lib/IKVM.OpenJDK.Management.dll",
+        "lib/IKVM.OpenJDK.Media.dll",
+        "lib/IKVM.OpenJDK.Misc.dll",
+        "lib/IKVM.OpenJDK.Naming.dll",
+        "lib/IKVM.OpenJDK.Nashorn.dll",
+        "lib/IKVM.OpenJDK.Remoting.dll",
+        "lib/IKVM.OpenJDK.Security.dll",
+        "lib/IKVM.OpenJDK.SwingAWT.dll",
+        "lib/IKVM.OpenJDK.Text.dll",
+        "lib/IKVM.OpenJDK.Tools.dll",
+        "lib/IKVM.OpenJDK.Util.dll",
+        "lib/IKVM.OpenJDK.XML.API.dll",
+        "lib/IKVM.OpenJDK.XML.Bind.dll",
+        "lib/IKVM.OpenJDK.XML.Crypto.dll",
+        "lib/IKVM.OpenJDK.XML.Parse.dll",
+        "lib/IKVM.OpenJDK.XML.Transform.dll",
+        "lib/IKVM.OpenJDK.XML.WebServices.dll",
+        "lib/IKVM.OpenJDK.XML.XPath.dll",
+        "lib/IKVM.Runtime.JNI.dll",
+        "lib/IKVM.Runtime.dll",
+        "x64/lib/JVM.DLL",
+        "x64/lib/ikvm-native-win32-x64.dll",
+        "x86/lib/JVM.DLL",
+        "x86/lib/ikvm-native-win32-x86.dll"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
@@ -6042,6 +6177,32 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "TikaOnDotnet/1.17.1": {
+      "sha512": "86DGfYa642cK/qGT3zy3FUZI1sfXpKTi52yU0UJhfYOw0JuWPMlpbvVU3KeJ1/sYSki2xtPLuk9ZAjSLz0M4rQ==",
+      "type": "package",
+      "path": "tikaondotnet/1.17.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/TikaOnDotNet.dll",
+        "tikaondotnet.1.17.1.nupkg.sha512",
+        "tikaondotnet.nuspec"
+      ]
+    },
+    "TikaOnDotnet.TextExtractor/1.17.1": {
+      "sha512": "scHGUIIWsTeX0RBM9kNgosbJoJxVAOH44ltu6LuCHDnZFLgSwcjmt/uBCvsSu7Dzc9u/wKZMATOcNOPA2qwjCw==",
+      "type": "package",
+      "path": "tikaondotnet.textextractor/1.17.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/TikaOnDotNet.TextExtraction.dll",
+        "lib/TikaOnDotNet.TextExtraction.pdb",
+        "lib/TikaOnDotNet.dll",
+        "tikaondotnet.textextractor.1.17.1.nupkg.sha512",
+        "tikaondotnet.textextractor.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -6053,7 +6214,8 @@
       "OpenAI >= 2.3.0",
       "Serilog.AspNetCore >= 9.0.0",
       "StackExchange.Redis >= 2.9.11",
-      "Swashbuckle.AspNetCore >= 6.6.2"
+      "Swashbuckle.AspNetCore >= 6.6.2",
+      "TikaOnDotnet.TextExtractor >= 1.17.1"
     ]
   },
   "packageFolders": {
@@ -6139,6 +6301,10 @@
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.6.2, )"
+          },
+          "TikaOnDotnet.TextExtractor": {
+            "target": "Package",
+            "version": "[1.17.1, )"
           }
         },
         "imports": [
@@ -6163,5 +6329,37 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'IKVM 8.1.5717' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "IKVM",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'TikaOnDotnet 1.17.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "TikaOnDotnet",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'TikaOnDotnet.TextExtractor 1.17.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "TikaOnDotnet.TextExtractor",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

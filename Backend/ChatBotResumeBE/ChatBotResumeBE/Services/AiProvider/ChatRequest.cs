@@ -17,9 +17,9 @@ namespace ChatBotResumeBE.Services.AiProvider
 
     public class Message
     {
-        private readonly Role _role;
+        private readonly string _role;
         private readonly string _prompt;
-        public Message(Role role, string prompt)
+        public Message(string role, string prompt)
         {
             _role = role;
             _prompt = prompt;

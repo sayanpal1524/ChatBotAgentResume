@@ -13,7 +13,10 @@ namespace ChatBotResumeBE.Orchestrator
 
         public async Task<string> HandleMessageAsync(string sessionId, string userMessage)
         {
-            return await _aiProvider.GetChatCompletionAsync(userMessage);
+            // Add a call to the AI provider to get a response
+            var response =  await _aiProvider.GetChatCompletionAsync(userMessage);
+            // Add a generic call to Map the call to class object
+            return response.ToString();
         }
 
         //public async IAsyncEnumerable<string> HandleMessageStreamAsync(string sessionId, string userMessage)

@@ -33,7 +33,7 @@ namespace ChatBotResumeBE.Services.AiProvider
             return Task.FromResult(apiKey);
         }
 
-        public async Task<string> GetChatCompletionAsync(string prompt, string systemMessage = "")
+        public async Task<ChatMessageContent> GetChatCompletionAsync(string prompt, string systemMessage = "")
         {
             if (string.IsNullOrEmpty(prompt))
             {
@@ -41,20 +41,18 @@ namespace ChatBotResumeBE.Services.AiProvider
                 var chatRequest = new ChatRequest(
                     messages: new List<Message>
                     {
-                    new Message(Role.System, "You are a resume parsing assistant. Extract structured data from resumes."),
-                    new Message(Role.User, $@"
-Parse this resume into JSON with keys: FullName, Email, Phone, Summary, Skills, Experience, Education, Certifications.
-
-Resume Text:
-{prompt}
-")
+                        new Message(new Role().System, "You are a resume parsing assistant. Extract structured data from resumes."),
+                        new Message(new Role().User, $@"Parse this resume into JSON with keys: FullName, Email, Phone, Summary, Skills, Experience, Education, Certifications.
+                            Resume Text:
+                            {prompt}"
+                        )
                     },
                     model: _model,
                     temperature: 0
                 );
             }
             var response = await _client.GetChatClient(_model).CompleteChatAsync(prompt);
-            return response.GetRawResponse().Content.ToString();
+            return response.Value.Content;
         }
 
         public Task<string> GetEmbeddingAsync(string input)
