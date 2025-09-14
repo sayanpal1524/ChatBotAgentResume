@@ -13,8 +13,7 @@ namespace ChatBotResumeBE.Services.AiProvider
 
         public OpenAiProvider(IConfiguration config)
         {
-            var apiKey = config["OpenAI:ApiKey"] ??
-                         Environment.GetEnvironmentVariable("OPENAI_API_KEY");
+            var apiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY");
 
             if (string.IsNullOrEmpty(apiKey))
                 throw new InvalidOperationException("OpenAI API key is missing.");

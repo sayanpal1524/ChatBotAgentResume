@@ -1,6 +1,8 @@
 using ChatBotResumeBE.Orchestrator;
 using ChatBotResumeBE.Services.AiProvider;
 using ChatBotResumeBE.Services.AiProvider.Interface;
+using ChatBotResumeBE.Services.ResumeParserService;
+using ChatBotResumeBE.Services.ResumeParserService.Interface;
 using ChatBotResumeBE.Util.Entity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -15,6 +17,7 @@ builder.Host.UseSerilog((ctx, lc) =>
 builder.Services.AddControllers();
 builder.Services.AddScoped<IChatOrchestrator, ChatOrchestrator>();
 builder.Services.AddScoped<IAiProvider, OpenAiProvider>();
+builder.Services.AddScoped<IResumeParser, ResumeParserService>();
 builder.Services.AddDbContext<ResumeContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultDBConnection")));
 

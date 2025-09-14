@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "Uue2Q8HGpr4=",
+  "dgSpecHash": "YWaiUUkpNmY=",
   "success": true,
   "projectFilePath": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\ChatBotResumeBE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sayan\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\sayan\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\sayan\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\bouncycastle.cryptography.2.4.0.nupkg.sha512",
     "C:\\Users\\sayan\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\sayan\\.nuget\\packages\\ikvm\\8.1.5717\\ikvm.8.1.5717.nupkg.sha512",
+    "C:\\Users\\sayan\\.nuget\\packages\\itextsharp\\5.5.13.4\\itextsharp.5.5.13.4.nupkg.sha512",
     "C:\\Users\\sayan\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\sayan\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
     "C:\\Users\\sayan\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",
@@ -122,6 +124,18 @@
       "warningLevel": 1,
       "filePath": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\ChatBotResumeBE.csproj",
       "libraryId": "IKVM",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'iTextSharp 5.5.13.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "projectPath": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\ChatBotResumeBE.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Projects\\ChatBotAgentResume\\Backend\\ChatBotResumeBE\\ChatBotResumeBE\\ChatBotResumeBE.csproj",
+      "libraryId": "iTextSharp",
       "targetGraphs": [
         "net8.0"
       ]

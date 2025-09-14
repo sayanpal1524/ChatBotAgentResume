@@ -1,4 +1,5 @@
 ﻿using ChatBotResumeBE.Services.AiProvider.Interface;
+using OpenAI.Chat;
 
 namespace ChatBotResumeBE.Services.AiProvider
 {
@@ -25,6 +26,11 @@ namespace ChatBotResumeBE.Services.AiProvider
         }
 
         public Task<string> GetModerationAsync(string input)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<ChatMessageContent> IAiProvider.GetChatCompletionAsync(string prompt, string systemMessage)
         {
             throw new NotImplementedException();
         }

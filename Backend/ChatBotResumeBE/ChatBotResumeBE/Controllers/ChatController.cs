@@ -4,29 +4,25 @@ using Microsoft.AspNetCore.Mvc;
 namespace ChatBotResumeBE.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ChatController : Controller
     {
         // GET: ChatController
+        [HttpGet("index")]
         public ActionResult Index()
         {
             return View();
         }
 
         // GET: ChatController/Details/5
+        [HttpGet("details/{id}")]
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: ChatController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
         // POST: ChatController/Create
-        [HttpPost]
+        [HttpPost("create")]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
         {
@@ -40,14 +36,8 @@ namespace ChatBotResumeBE.Controllers
             }
         }
 
-        // GET: ChatController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
         // POST: ChatController/Edit/5
-        [HttpPost]
+        [HttpPost("edit/{id}")]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
         {
@@ -61,14 +51,8 @@ namespace ChatBotResumeBE.Controllers
             }
         }
 
-        // GET: ChatController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
         // POST: ChatController/Delete/5
-        [HttpPost]
+        [HttpPost("delete/{id}")]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
         {

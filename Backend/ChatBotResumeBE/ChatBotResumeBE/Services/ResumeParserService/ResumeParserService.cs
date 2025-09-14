@@ -22,18 +22,27 @@ namespace ChatBotResumeBE.Services.ResumeParserService
         public async Task<Profile> ParseAsync(IFormFile file)
         {
             //throw new NotImplementedException();
+            var text = String.Empty;
             // Use a library like iTextSharp for PDFs or OpenXML for Word documents
             // Extract text from the file
-            using var stream = file.OpenReadStream();
-            using var ms = new MemoryStream();
-            await stream.CopyToAsync(ms);
-            var text = _textExtractor.Extract(ms.ToArray()).Text;
+            try 
+            {
+                using var stream = file.OpenReadStream();
+                using var ms = new MemoryStream();
+                await stream.CopyToAsync(ms);
+                text = _textExtractor.Extract(ms.ToArray()).Text;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error extracting text from resume.");
+                throw;
+            }
             // Use regex or NLP techniques to extract structured data
             var response = await _aiProviderClient.GetChatCompletionAsync(text);
             // Map extracted data to Profile object
             var parameterList = response.Select(x => x.Text);
             //parameterList.
-            // return profile;
+            return new Profile();
         }
     }
 }
