@@ -1,7 +1,10 @@
 ﻿using ChatBotResumeBE.Services.AiProvider.Interface;
 using ChatBotResumeBE.Services.ResumeParserService.Interface;
 using ChatBotResumeBE.Util.Model;
+using iTextSharp.text.pdf;
+using iTextSharp.text.pdf.parser;
 using net.arnx.jsonic;
+using System.Text;
 using TikaOnDotNet.TextExtraction;
 
 namespace ChatBotResumeBE.Services.ResumeParserService
@@ -29,13 +32,32 @@ namespace ChatBotResumeBE.Services.ResumeParserService
             {
                 using var stream = file.OpenReadStream();
                 using var ms = new MemoryStream();
-                await stream.CopyToAsync(ms);
-                text = _textExtractor.Extract(ms.ToArray()).Text;
+                if (file == null || file.Length == 0)
+                    throw new ArgumentException("Invalid file uploaded.");
+
+                using (var memoryStream = new MemoryStream())
+                {
+                    await file.CopyToAsync(memoryStream);
+                    memoryStream.Position = 0; // Reset to beginning
+
+                    using (var reader = new PdfReader(memoryStream))
+                    {
+                        StringBuilder output = new StringBuilder();
+
+                        for (int i = 1; i <= reader.NumberOfPages; i++)
+                        {
+                            string pageText = PdfTextExtractor.GetTextFromPage(reader, i, new LocationTextExtractionStrategy());
+                            output.AppendLine(pageText);
+                        }
+
+                        text = output.ToString();
+                    }
+                }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error extracting text from resume.");
-                throw;
+                _logger.LogError(ex.Message, "Error extracting text from resume.");
+                return null;
             }
             // Use regex or NLP techniques to extract structured data
             var response = await _aiProviderClient.GetChatCompletionAsync(text);

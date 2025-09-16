@@ -24,7 +24,14 @@ namespace ChatBotResumeBE.Controllers
             //Parse resume → structured profile
             var profile = await _resumeParser.ParseAsync(file);
             //await _profileService.SaveAsync(profile);
-            return Ok(profile);
+            if (profile != null)
+            {
+                return UnprocessableEntity();
+            }
+            else
+            {
+                return Ok(profile);
+            }
         }
 
     }

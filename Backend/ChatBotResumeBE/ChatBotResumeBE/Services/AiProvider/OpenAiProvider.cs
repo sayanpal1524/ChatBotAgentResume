@@ -10,7 +10,7 @@ namespace ChatBotResumeBE.Services.AiProvider
     {
         private readonly OpenAIClient _client;
         private readonly string _model;
-
+        
         public OpenAiProvider(IConfiguration config)
         {
             var apiKey = Environment.GetEnvironmentVariable("OPENAI_API_KEY");
@@ -34,7 +34,7 @@ namespace ChatBotResumeBE.Services.AiProvider
 
         public async Task<ChatMessageContent> GetChatCompletionAsync(string prompt, string systemMessage = "")
         {
-            if (string.IsNullOrEmpty(prompt))
+            if (!string.IsNullOrEmpty(prompt))
             {
                 // 2. Prompt OpenAI for structured extraction
                 var chatRequest = new ChatRequest(
@@ -50,7 +50,7 @@ namespace ChatBotResumeBE.Services.AiProvider
                     temperature: 0
                 );
             }
-            var response = await _client.GetChatClient(_model).CompleteChatAsync(prompt);
+            var response = await _client.GetChatClient(_model).CompleteChatAsync(prompt); //Send ChatMessage Not only prompt
             return response.Value.Content;
         }
 

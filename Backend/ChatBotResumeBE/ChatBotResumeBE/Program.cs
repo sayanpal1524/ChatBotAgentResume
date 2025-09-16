@@ -17,6 +17,7 @@ builder.Host.UseSerilog((ctx, lc) =>
 builder.Services.AddControllers();
 builder.Services.AddScoped<IChatOrchestrator, ChatOrchestrator>();
 builder.Services.AddScoped<IAiProvider, OpenAiProvider>();
+builder.Services.AddScoped<IAiProvider, SarvamAiProvider>();
 builder.Services.AddScoped<IResumeParser, ResumeParserService>();
 builder.Services.AddDbContext<ResumeContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultDBConnection")));

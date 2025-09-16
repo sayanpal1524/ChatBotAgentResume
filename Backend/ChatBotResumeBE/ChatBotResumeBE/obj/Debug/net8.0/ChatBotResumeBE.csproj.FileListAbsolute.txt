@@ -222,3 +222,4 @@ D:\Projects\ChatBotAgentResume\Backend\ChatBotResumeBE\ChatBotResumeBE\bin\Debug
 D:\Projects\ChatBotAgentResume\Backend\ChatBotResumeBE\ChatBotResumeBE\bin\Debug\net8.0\TikaOnDotNet.TextExtraction.dll
 D:\Projects\ChatBotAgentResume\Backend\ChatBotResumeBE\ChatBotResumeBE\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 D:\Projects\ChatBotAgentResume\Backend\ChatBotResumeBE\ChatBotResumeBE\bin\Debug\net8.0\itextsharp.dll
+D:\Projects\ChatBotAgentResume\Backend\ChatBotResumeBE\ChatBotResumeBE\bin\Debug\net8.0\Newtonsoft.Json.dll
