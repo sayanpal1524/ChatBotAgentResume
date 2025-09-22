@@ -32,26 +32,27 @@ namespace ChatBotResumeBE.Services.AiProvider
             return Task.FromResult(apiKey);
         }
 
-        public async Task<ChatMessageContent> GetChatCompletionAsync(string prompt, string systemMessage = "")
+        public async Task<string> GetChatCompletionAsync(string prompt, string systemMessage = "")
         {
-            if (!string.IsNullOrEmpty(prompt))
-            {
-                // 2. Prompt OpenAI for structured extraction
-                var chatRequest = new ChatRequest(
-                    messages: new List<Message>
-                    {
-                        new Message(new Role().System, "You are a resume parsing assistant. Extract structured data from resumes."),
-                        new Message(new Role().User, $@"Parse this resume into JSON with keys: FullName, Email, Phone, Summary, Skills, Experience, Education, Certifications.
-                            Resume Text:
-                            {prompt}"
-                        )
-                    },
-                    model: _model,
-                    temperature: 0
-                );
-            }
-            var response = await _client.GetChatClient(_model).CompleteChatAsync(prompt); //Send ChatMessage Not only prompt
-            return response.Value.Content;
+            throw new NotImplementedException();
+            //if (!string.IsNullOrEmpty(prompt))
+            //{
+            //    // 2. Prompt OpenAI for structured extraction
+            //    var chatRequest = new ChatRequest(
+            //        messages: new List<Message>
+            //        {
+            //            new Message(new Role().System, "You are a resume parsing assistant. Extract structured data from resumes."),
+            //            new Message(new Role().User, $@"Parse this resume into JSON with keys: FullName, Email, Phone, Summary, Skills, Experience, Education, Certifications.
+            //                Resume Text:
+            //                {prompt}"
+            //            )
+            //        },
+            //        model: _model,
+            //        temperature: 0
+            //    );
+            //}
+            //var response = await _client.GetChatClient(_model).CompleteChatAsync(prompt); //Send ChatMessage Not only prompt
+            //return response.Value.Content;
         }
 
         public Task<string> GetEmbeddingAsync(string input)

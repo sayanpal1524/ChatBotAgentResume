@@ -16,11 +16,21 @@ builder.Host.UseSerilog((ctx, lc) =>
 // Services
 builder.Services.AddControllers();
 builder.Services.AddScoped<IChatOrchestrator, ChatOrchestrator>();
-builder.Services.AddScoped<IAiProvider, OpenAiProvider>();
-builder.Services.AddScoped<IAiProvider, SarvamAiProvider>();
+builder.Services.AddScoped<OpenAiProvider>();
+builder.Services.AddScoped<SarvamAiProvider>();
+builder.Services.AddScoped<Func<string, IAiProvider>>(serviceProvider => key =>
+{
+    return key switch
+    {
+        "openai" => serviceProvider.GetRequiredService<OpenAiProvider>(),
+        "sarvam" => serviceProvider.GetRequiredService<SarvamAiProvider>(),
+        _ => throw new ArgumentException("Invalid provider key")
+    };
+});
 builder.Services.AddScoped<IResumeParser, ResumeParserService>();
 builder.Services.AddDbContext<ResumeContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultDBConnection")));
+builder.Services.AddHttpClient();
 
 // CORS
 builder.Services.AddCors(options =>

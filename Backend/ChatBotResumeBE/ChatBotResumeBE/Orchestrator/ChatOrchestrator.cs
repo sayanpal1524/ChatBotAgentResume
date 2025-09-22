@@ -4,9 +4,9 @@ namespace ChatBotResumeBE.Orchestrator
 {
     public class ChatOrchestrator : IChatOrchestrator
     {
-        private readonly IAiProvider _aiProvider;
+        private readonly Func<string, IAiProvider> _aiProvider;
 
-        public ChatOrchestrator(IAiProvider aiProvider)
+        public ChatOrchestrator(Func<string, IAiProvider> aiProvider)
         {
             _aiProvider = aiProvider;
         }
@@ -14,7 +14,8 @@ namespace ChatBotResumeBE.Orchestrator
         public async Task<string> HandleMessageAsync(string sessionId, string userMessage)
         {
             // Add a call to the AI provider to get a response
-            var response =  await _aiProvider.GetChatCompletionAsync(userMessage);
+            var aiProviderClient = _aiProvider("openai");
+            var response =  await aiProviderClient.GetChatCompletionAsync(userMessage);
             // Add a generic call to Map the call to class object
             return response.ToString();
         }

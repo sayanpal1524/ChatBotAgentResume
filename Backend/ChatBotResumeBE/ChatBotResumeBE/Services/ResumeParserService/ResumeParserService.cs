@@ -1,4 +1,5 @@
-﻿using ChatBotResumeBE.Services.AiProvider.Interface;
+﻿using ChatBotResumeBE.Services.AiProvider;
+using ChatBotResumeBE.Services.AiProvider.Interface;
 using ChatBotResumeBE.Services.ResumeParserService.Interface;
 using ChatBotResumeBE.Util.Model;
 using iTextSharp.text.pdf;
@@ -12,10 +13,10 @@ namespace ChatBotResumeBE.Services.ResumeParserService
     public class ResumeParserService : IResumeParser
     {
         private readonly ILogger<ResumeParserService> _logger;
-        private readonly IAiProvider _aiProviderClient;
+        private readonly Func<string, IAiProvider> _aiProviderClient;
         private readonly TextExtractor _textExtractor;
 
-        public ResumeParserService(ILogger<ResumeParserService> logger, IAiProvider aiProviderClient)
+        public ResumeParserService(ILogger<ResumeParserService> logger, Func<string, IAiProvider> aiProviderClient)
         {
             _logger = logger;
             _aiProviderClient = aiProviderClient;
@@ -60,9 +61,10 @@ namespace ChatBotResumeBE.Services.ResumeParserService
                 return null;
             }
             // Use regex or NLP techniques to extract structured data
-            var response = await _aiProviderClient.GetChatCompletionAsync(text);
+            var aiProvider = _aiProviderClient("sarvam");
+            var response = await aiProvider.GetChatCompletionAsync(text);
             // Map extracted data to Profile object
-            var parameterList = response.Select(x => x.Text);
+            var parameterList = response;
             //parameterList.
             return new Profile();
         }
