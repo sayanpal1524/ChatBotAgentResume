@@ -39,7 +39,7 @@ namespace ChatBotResumeBE.Services.AiProvider
                 model = _model,
                 messages = new[]
                 {
-                    new { role = "user", content = prompt }
+                    new { role = "user", content = prompt+"return Candidate details, Experience and Education as single line JSON payload." }
                 }
             };
             var jsonPayload = System.Text.Json.JsonSerializer.Serialize(requestPayload);

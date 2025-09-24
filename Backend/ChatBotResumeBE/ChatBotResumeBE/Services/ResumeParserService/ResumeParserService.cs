@@ -5,6 +5,7 @@ using ChatBotResumeBE.Util.Model;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 using net.arnx.jsonic;
+using Newtonsoft.Json.Linq;
 using System.Text;
 using TikaOnDotNet.TextExtraction;
 
@@ -65,6 +66,7 @@ namespace ChatBotResumeBE.Services.ResumeParserService
             var response = await aiProvider.GetChatCompletionAsync(text);
             // Map extracted data to Profile object
             var parameterList = response;
+            //Newtonsoft.Json.Linq.JObject jsonPayload = JObject.Parse(parameterList);
             //parameterList.
             return new Profile();
         }
